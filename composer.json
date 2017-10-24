@@ -19,7 +19,7 @@
     ],
     "require": {
         "php": "~7.0",
-        "kdaviesnz/seokeywords": "0.0.1"
+        "kdaviesnz/seokeywords": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit" : ">=5.4.3",
@@ -29,23 +29,5 @@
         "psr-4": {
             "kdaviesnz\\seooptimize\\": "src"
         }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "kdaviesnz\\seooptimize\\": "tests"
-        }
-    },
-    "scripts": {
-        "test": "phpunit",
-        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
-        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev"
-        }
-    },
-    "config": {
-        "sort-packages": true
     }
 }
